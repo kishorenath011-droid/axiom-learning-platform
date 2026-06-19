@@ -1,0 +1,1 @@
+/** @type {import('next').NextConfig} */\nconst nextConfig = {\n  reactStrictMode: true,\n  swcMinify: true,\n  images: {\n    remotePatterns: [\n      {\n        protocol: 'https',\n        hostname: '**',\n      },\n    ],\n  },\n  env: {\n    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001',\n  },\n};\n\nmodule.exports = nextConfig;\n
